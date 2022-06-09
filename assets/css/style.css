@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --maincolor: rgba(2, 54, 212, 0.432);
+    --hover: rgb(6, 6, 120);
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    color: var(--maincolor);
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--maincolor);
+}
+
+a {
+    color: var(--maincolor);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+a:hover {
+    color: var(--hover);
+    text-shadow: 5px 5px 30px var(--hover);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+body {
+    align-content: center;
+}
+
+#home-screen {
+    position: relative;
+    display: block;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 22.5%;
+    margin-right: 25%;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--maincolor);
+    color: whitesmoke;
+    border-radius: 3.5px;
+    padding: 5px 10px 5px 10px;
+    font-size: large;
+}
+
+button:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+#start-button {
+    margin-top: 20px;
+}
+
+#createH2 {
+    font-size: 24px;
+}
+
+#answers-li {
+    background-color: var(--maincolor);
+    margin-top: 10px;
+    margin-left: -20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 4px 4px 2px grey;
+}
+
+#answers-li:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+}
+
+#createDiv {
+    padding: 2.5%;
+    color: rgb(175, 175, 175);
+}
+
+#high-score-li {
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: -20px;
+    font-size: 18px;
+
+}
+
+#high-score-home {
+    position: relative;
+    display: block;
+    flex: auto;
+    margin-top: 8%;
+    margin-left: 35%;
+    margin-right: 25%;
+    font-weight: bold;
+}
+
+#go-back {
+    background-color: var(--maincolor);
+    position: relative;
+    align-self: left;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+    width: auto;
+    text-align: center;
+}
+
+#go-back:hover {
+    background-color: var(--hover);
+}
+
+#clear {
+    background-color: var(--maincolor);
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#clear:hover {
+    background-color: var(--hover);
+}
+
+#submit {
+    background-color: var(--maincolor);
+    display: inline-block;
+    flex: auto;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#submit:hover {
+    background-color: var(--hover);
+}
+
+#initials {
+    padding: 5px;
+    max-width: 150px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        max-width: 786px;
+    }
+
+    #home-screen {
+        position: relative;
+    }
+
+    a {
+        margin-left: 5%;
+    }
+
+    #go-back {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    #clear {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        min-width: 640px;
+    }
+
+    #home-screen {
+        position: absolute;
+    }
+
+    a {
+        margin-left: 5%;
+    }
+}
